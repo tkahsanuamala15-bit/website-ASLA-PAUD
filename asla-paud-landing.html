@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ASLA PAUD Islamic School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: 'Nunito', sans-serif; }
+  .font-heading { font-family: 'Quicksand', sans-serif; }
+  @keyframes float-slow { 0%,100% { transform: translateY(0px) rotate(0deg);} 50% { transform: translateY(-18px) rotate(6deg);} }
+  @keyframes float-med { 0%,100% { transform: translateY(0px) rotate(0deg);} 50% { transform: translateY(-12px) rotate(-8deg);} }
+  @keyframes float-fast { 0%,100% { transform: translateY(0px);} 50% { transform: translateY(-8px);} }
+  .float-slow { animation: float-slow 6s ease-in-out infinite; }
+  .float-med { animation: float-med 5s ease-in-out infinite; }
+  .float-fast { animation: float-fast 4s ease-in-out infinite; }
+  .mint-bg { background-color: #c8f4e0; }
+</style>
+</head>
+<body class="min-h-screen bg-white text-slate-700 overflow-x-hidden">
+
+  <!-- ================= HEADER ================= -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#beranda" class="flex items-center gap-2 shrink-0">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-200 to-sky-300 flex items-center justify-center text-lg shadow-sm">🌙</div>
+        <span class="font-heading text-xl md:text-2xl font-extrabold text-sky-900">ASLA <span class="text-pink-400">PAUD</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 font-heading font-semibold text-slate-600">
+        <a href="#beranda" class="hover:text-sky-500 transition-colors">Beranda</a>
+        <a href="#profil" class="hover:text-sky-500 transition-colors">Profil</a>
+        <a href="#program" class="hover:text-sky-500 transition-colors">Program</a>
+        <a href="#galeri" class="hover:text-sky-500 transition-colors">Galeri</a>
+        <a href="#kontak" class="hover:text-sky-500 transition-colors">Kontak</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#kontak" class="hidden sm:inline-block bg-yellow-300 hover:bg-yellow-400 transition-colors text-yellow-900 font-heading font-bold px-6 py-2.5 rounded-full shadow-sm">Daftar Sekarang</a>
+        <button id="menuToggle" class="md:hidden w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center" aria-label="Buka menu">
+          <span id="menuIcon" class="text-xl">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3 font-heading font-semibold text-slate-600 bg-white">
+      <a href="#beranda">Beranda</a>
+      <a href="#profil">Profil</a>
+      <a href="#program">Program</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#kontak" class="bg-yellow-300 text-yellow-900 font-bold px-6 py-2.5 rounded-full text-center">Daftar Sekarang</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="beranda" class="relative bg-gradient-to-b from-sky-200 via-sky-100 to-white pt-16 pb-28 md:pt-24 md:pb-36 overflow-hidden">
+    <div class="absolute top-10 left-6 w-16 h-16 rounded-full bg-pink-200/70 float-slow"></div>
+    <div class="absolute top-24 right-10 w-10 h-10 rounded-full bg-yellow-200/80 float-med"></div>
+    <div class="absolute bottom-16 left-16 w-8 h-8 mint-bg rounded-full float-fast"></div>
+    <div class="absolute top-40 left-1/3 text-3xl float-med select-none">⭐</div>
+    <div class="absolute bottom-24 right-1/4 text-3xl float-slow select-none">☁️</div>
+    <div class="absolute top-16 right-1/3 text-2xl float-fast select-none">✨</div>
+
+    <div class="relative max-w-4xl mx-auto px-6 text-center">
+      <span class="inline-block bg-white/70 text-sky-700 font-heading font-bold text-sm px-4 py-1.5 rounded-full shadow-sm mb-6">🕌 PAUD Islam Terpadu</span>
+      <h1 class="font-heading font-extrabold text-4xl sm:text-5xl md:text-6xl leading-tight text-sky-900">
+        Membangun Generasi Rabbani<br class="hidden sm:block" /> yang Cerdas &amp; Ceria!
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-sky-800/80 max-w-2xl mx-auto">
+        Pendidikan usia dini berbasis nilai-nilai Islam dengan pendekatan belajar sambil bermain yang menyenangkan.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#kontak" class="bg-pink-300 hover:bg-pink-400 transition-colors text-pink-900 font-heading font-bold px-8 py-3.5 rounded-full shadow-md">Info Pendaftaran</a>
+        <a href="#kontak" class="bg-yellow-300 hover:bg-yellow-400 transition-colors text-yellow-900 font-heading font-bold px-8 py-3.5 rounded-full shadow-md">Hubungi Kami</a>
+      </div>
+
+      <!-- Hero image placeholder -->
+      <div class="mt-14 mx-auto max-w-3xl">
+        <div class="relative aspect-[16/9] rounded-[2.5rem] bg-gradient-to-br from-white via-sky-50 to-pink-100 shadow-xl flex items-center justify-center overflow-hidden">
+          <div class="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-yellow-200/80"></div>
+          <div class="absolute -bottom-8 -right-8 w-32 h-32 rounded-full mint-bg opacity-80"></div>
+          <span class="text-6xl md:text-7xl">🧒🏻👧🏻🕋</span>
+          <!-- Ganti div di atas dengan: <img src="images/hero-kids.jpg" alt="Anak-anak ceria di ASLA PAUD" class="w-full h-full object-cover" /> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROGRAM UNGGULAN ================= -->
+  <section id="program" class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <div class="text-center mb-14">
+      <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-sky-900">Program Unggulan</h2>
+      <p class="mt-3 text-slate-500 max-w-xl mx-auto">Kurikulum yang memadukan ilmu, iman, dan keceriaan dalam satu genggaman pembelajaran.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-pink-100 rounded-3xl p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-white/70 flex items-center justify-center text-2xl mb-5">📖</div>
+        <h3 class="font-heading font-bold text-lg text-slate-800 mb-2">Kurikulum Islami</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Nilai-nilai akhlak &amp; aqidah dalam setiap kegiatan belajar.</p>
+      </div>
+      <div class="bg-emerald-50 rounded-3xl p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-white/70 flex items-center justify-center text-2xl mb-5">🧩</div>
+        <h3 class="font-heading font-bold text-lg text-slate-800 mb-2">Bermain &amp; Belajar</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Metode belajar aktif melalui permainan edukatif yang seru.</p>
+      </div>
+      <div class="bg-yellow-100 rounded-3xl p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-white/70 flex items-center justify-center text-2xl mb-5">🌙</div>
+        <h3 class="font-heading font-bold text-lg text-slate-800 mb-2">Tahfidz Anak</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Menghafal juz 'Amma dengan metode talaqqi yang menyenangkan.</p>
+      </div>
+      <div class="bg-indigo-100 rounded-3xl p-7 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+        <div class="w-14 h-14 rounded-2xl bg-white/70 flex items-center justify-center text-2xl mb-5">🏡</div>
+        <h3 class="font-heading font-bold text-lg text-slate-800 mb-2">Fasilitas Ramah Anak</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Ruang kelas aman, bersih, dan didesain khusus untuk si kecil.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BANNER ================= -->
+  <section class="relative bg-white py-16 md:py-20 overflow-hidden">
+    <div class="absolute top-6 left-10 w-10 h-10 rounded-full bg-pink-100 float-slow"></div>
+    <div class="absolute bottom-8 right-16 w-14 h-14 rounded-full bg-yellow-100 float-med"></div>
+    <div class="absolute top-10 right-1/4 text-2xl float-fast select-none">⭐</div>
+    <div class="absolute bottom-10 left-1/4 w-6 h-6 rounded-full bg-sky-100 float-fast"></div>
+
+    <div class="relative max-w-2xl mx-auto px-6 text-center">
+      <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-sky-900 mb-4">Mari Bergabung Bersama Kami</h2>
+      <p class="text-slate-500 mb-8">Jadikan tahun ini langkah awal si kecil menuju masa depan yang cerdas, berakhlak, dan penuh keceriaan.</p>
+      <a href="#kontak" class="inline-block bg-yellow-300 hover:bg-yellow-400 transition-colors text-yellow-900 font-heading font-bold px-10 py-4 rounded-full shadow-md">Daftar Sekarang</a>
+    </div>
+  </section>
+
+  <!-- ================= AKTIVITAS KAMI ================= -->
+  <section id="galeri" class="bg-sky-50/60 py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-sky-900">Aktivitas Kami</h2>
+        <p class="mt-3 text-slate-500 max-w-xl mx-auto">Keseharian yang penuh warna, gerak, dan ibadah sejak dini.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-br from-pink-200 to-pink-100 flex items-center justify-center text-5xl">
+            🎨
+            <!-- Ganti dengan: <img src="images/kreativitas.jpg" class="w-full h-full object-cover" /> -->
+          </div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-lg text-slate-800 mb-2">Kreativitas &amp; Seni</h3>
+            <p class="text-sm text-slate-500">Kegiatan rutin yang dirancang agar tumbuh kembang si kecil optimal, seimbang jasmani dan rohani.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-br from-emerald-200 to-emerald-100 flex items-center justify-center text-5xl">⚽</div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-lg text-slate-800 mb-2">Motorik &amp; Olahraga</h3>
+            <p class="text-sm text-slate-500">Kegiatan rutin yang dirancang agar tumbuh kembang si kecil optimal, seimbang jasmani dan rohani.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+          <div class="h-48 bg-gradient-to-br from-sky-200 to-sky-100 flex items-center justify-center text-5xl">🕌</div>
+          <div class="p-6">
+            <h3 class="font-heading font-bold text-lg text-slate-800 mb-2">Praktek Ibadah</h3>
+            <p class="text-sm text-slate-500">Kegiatan rutin yang dirancang agar tumbuh kembang si kecil optimal, seimbang jasmani dan rohani.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROMO / PPDB ================= -->
+  <section id="profil" class="relative overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="bg-yellow-100 flex items-center px-6 md:px-16 py-16 md:py-24">
+        <div>
+          <span class="inline-block bg-white/70 text-yellow-800 font-heading font-bold text-sm px-4 py-1.5 rounded-full mb-5">PPDB Dibuka</span>
+          <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-slate-800 mb-4 leading-snug">
+            Pendaftaran Tahun Ajaran<br /> Baru Dibuka!
+          </h2>
+          <p class="text-slate-600 mb-8 max-w-md">Ayo daftarkan buah hati Anda dan jadi bagian dari keluarga besar ASLA PAUD Islamic School. Kuota terbatas!</p>
+          <a href="#kontak" class="inline-block bg-pink-300 hover:bg-pink-400 transition-colors text-pink-900 font-heading font-bold px-8 py-3.5 rounded-full shadow-md">Daftar</a>
+        </div>
+      </div>
+
+      <div class="bg-pink-100 flex items-center justify-center px-6 py-16 md:py-24">
+        <div class="relative w-full max-w-sm aspect-square rounded-[2.5rem] bg-gradient-to-br from-white to-pink-200 shadow-xl flex items-center justify-center overflow-hidden">
+          <div class="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-yellow-200/70"></div>
+          <div class="absolute -bottom-8 -left-8 w-24 h-24 rounded-full bg-sky-200/70"></div>
+          <span class="text-6xl">👩🏻‍🏫🧒🏻👧🏻</span>
+          <!-- Ganti dengan: <img src="images/guru-siswa.jpg" class="w-full h-full object-cover" /> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONI ================= -->
+  <section class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="text-center mb-14">
+      <h2 class="font-heading font-extrabold text-3xl md:text-4xl text-sky-900">Kata Orang Tua Kami</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 text-center">
+        <div class="w-16 h-16 rounded-full bg-pink-200 mx-auto mb-4 flex items-center justify-center text-2xl">👤</div>
+        <p class="text-sm text-slate-600 italic mb-3">"Anak saya jadi lebih semangat mengaji dan sholat sejak sekolah di sini."</p>
+        <p class="font-heading font-bold text-slate-800 text-sm">Bunda Sarah</p>
+      </div>
+      <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 text-center">
+        <div class="w-16 h-16 rounded-full bg-sky-200 mx-auto mb-4 flex items-center justify-center text-2xl">👤</div>
+        <p class="text-sm text-slate-600 italic mb-3">"Gurunya sabar dan penuh kasih, anak-anak betah bermain sambil belajar."</p>
+        <p class="font-heading font-bold text-slate-800 text-sm">Bunda Fitri</p>
+      </div>
+      <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 text-center">
+        <div class="w-16 h-16 rounded-full bg-yellow-200 mx-auto mb-4 flex items-center justify-center text-2xl">👤</div>
+        <p class="text-sm text-slate-600 italic mb-3">"Fasilitasnya bersih, aman, dan suasananya sangat islami."</p>
+        <p class="font-heading font-bold text-slate-800 text-sm">Ayah Rizky</p>
+      </div>
+      <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 text-center">
+        <div class="w-16 h-16 rounded-full bg-emerald-200 mx-auto mb-4 flex items-center justify-center text-2xl">👤</div>
+        <p class="text-sm text-slate-600 italic mb-3">"Tahfidznya luar biasa, anak saya hafal beberapa surah pendek."</p>
+        <p class="font-heading font-bold text-slate-800 text-sm">Bunda Amel</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="kontak" class="bg-sky-100 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-9 h-9 rounded-full bg-white flex items-center justify-center text-lg">🌙</div>
+          <span class="font-heading font-extrabold text-lg text-sky-900">ASLA PAUD</span>
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">Jl. Pendidikan Islami No. 12,<br />Makassar, Sulawesi Selatan</p>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-bold text-slate-800 mb-4">Kontak</h4>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>📱 WhatsApp: 0812-3456-7890</li>
+          <li>✉️ Email: info@aslapaud.sch.id</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-bold text-slate-800 mb-4">Tautan Cepat</h4>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li><a href="#beranda" class="hover:text-sky-600">Beranda</a></li>
+          <li><a href="#profil" class="hover:text-sky-600">Profil</a></li>
+          <li><a href="#program" class="hover:text-sky-600">Program</a></li>
+          <li><a href="#galeri" class="hover:text-sky-600">Galeri</a></li>
+          <li><a href="#kontak" class="hover:text-sky-600">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-heading font-bold text-slate-800 mb-4">Ikuti Kami</h4>
+        <div class="flex gap-3">
+          <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">📸</div>
+          <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">📘</div>
+          <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">🎵</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-sky-200/60 text-center text-xs text-slate-500">
+      <span id="year"></span> ASLA PAUD Islamic School. Semua hak dilindungi.
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    menuToggle.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuIcon.textContent = isHidden ? '✕' : '☰';
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.textContent = '☰';
+      });
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = '© ' + new Date().getFullYear();
+  </script>
+</body>
+</html>
